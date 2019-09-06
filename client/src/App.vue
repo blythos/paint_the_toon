@@ -1,11 +1,23 @@
 <template lang="html">
+  <div>
+    <header-section />
+      <VueMap />
+    </div>
 
-</template>
+  </template>
 
-<script>
-export default {
-}
-</script>
+  <script>
+  import HeaderSection from '@/components/HeaderSection.vue'
+  import VueMap from '@/components/Map.vue'
+  export default {
+    name: 'app',
+    components: {
+      VueMap,
+      HeaderSection
+    }
+  }
 
-<style lang="css" scoped>
-</style>
+  </script>
+
+  <style lang="css" scoped>
+  </style>
