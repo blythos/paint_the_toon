@@ -14,7 +14,7 @@ export default {
     return {
       zoom: 15,
       center: [55.865332, -4.258086],
-      url: 'https://{s}.tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png?apikey={apikey}',
+      url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
     }
   },
