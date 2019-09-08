@@ -5,6 +5,7 @@
 
 <script>
 import L from 'leaflet';
+import Service from '@/services/Service.js'
 export default {
   name: 'map',
   components: {
@@ -16,9 +17,14 @@ export default {
       center: [55.865332, -4.258086],
       url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+      murals: []
     }
   },
   mounted(){
+    Service.getTrails()
+    .then(trails => this.murals = trails)
+
+
     this.map = L.map('map');
     this.map.addEventListener('click', (e) => {
       let coords = [e.latlng.lat, e.latlng.lng]
