@@ -1,6 +1,5 @@
 const baseURL = 'http://localhost:3000/api/trail/'
 
-
 export default {
   getTrails(){
     return fetch(baseURL)
