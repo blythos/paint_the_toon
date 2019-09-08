@@ -4,32 +4,40 @@ db.dropDatabase();
 db.trail.insertMany([
   {
     artists: {
-      {
-        name: "Rogue-One",
-        artistBio: "Rogue-one hails from glasgow and has been mastering the art of spraypainting for over 15 years. His work ranges from stencils, pieces, characters, 3D, canvases and to large scale productions. He also working in oils and acrylics and graphic design."},
+        {
+          name: "Rogue-One",
+          artistBio: "Rogue-one hails from glasgow and has been mastering the art of spraypainting for over 15 years. His work ranges from stencils, pieces, characters, 3D, canvases and to large scale productions. He also working in oils and acrylics and graphic design.",
+          website: "https://www.facebook.com/R0GUE0NER/"
+        },
         {
           name: "Elph",
-          artistBio: "Elph is a painter and illustrator living in Edinburgh, Scotland."
+          artistBio: "Elph is a painter and illustrator living in Edinburgh, Scotland.",
+          website: "http://akaelph.com/"
         },
         {
           artist: "Fintan Magee",
-          artistBio: "Fintan Magee is an Australian street artist known for his murals throughout Australia and the world. Born in Lismore New South Wales he grew up in Brisbane, gaining a reputation as a graffiti writer before obtaining a fine arts degree and relocating to Sydney."
+          artistBio: "Fintan Magee is an Australian street artist known for his murals throughout Australia and the world. Born in Lismore New South Wales he grew up in Brisbane, gaining a reputation as a graffiti writer before obtaining a fine arts degree and relocating to Sydney.",
+          website: "http://fintanmagee.com/"
         },
         {
           artist: "Faith 47",
           artistBio: "Faith XLVII is an internationally-acclaimed visual artist from South Africa who is currently based in Los Angeles.",
+          website: "https://faith47.com/"
         },
         {
           artist: "Klingatron",
-          artistBio: "Klingatron, aka James Klinge, only releaved his identity when he contributed to the mural trial."
+          artistBio: "James Klinge was born in Glasgow, Scotland where he continues to live and work. </br>Whilst his paintings can range from small canvas works to large scale murals, his foundation is made from intricate and detailed hand cut stencil. His paintings show a complimentary blend of high detail and expressive free hand marks that add a near abstract element to his subject matter, which is primararily figurative studies.",
+          website: "https://jamesklinge.bigcartel.com/"
         },
         {
           artist: "SmugOne",
-          artistBio: "The Australian-born artist – real name Sam Bates – is originally from Nowra in New South Wales. He has lived in Scotland for 16 years."
+          artistBio: "The Australian-born artist – real name Sam Bates – is originally from Nowra in New South Wales. He has lived in Scotland for 16 years.",
+          website: "https://www.facebook.com/smuggraffiti/"
         },
         {
           artist: "Recoat",
-          artistBio: "Founded in 2007 by Amy Whiten and Alistair Wyllie, Recoat started out as a unique gallery space in Glasgow, providing a platform for Contemporary Urban Art and Design in Scotland."
+          artistBio: "Founded in 2007 by Amy Whiten and Alistair Wyllie, Recoat started out as a unique gallery space in Glasgow, providing a platform for Contemporary Urban Art and Design in Scotland.",
+          website: "http://recoatdesign.com/"
         },
         {
           artist: "Stormie Mills",
@@ -38,7 +46,8 @@ db.trail.insertMany([
         },
         {
           artist: "Guido Van Helten",
-          artistBio: "Guido van Helten is an Australian artist, known for his photorealistic murals. Van Helten was raised in Brisbane and was a graffiti artist in his youth. He moved to Lismore, New South Wales to study visual arts at Southern Cross University, majoring in printmaking."
+          artistBio: "Guido van Helten is an Australian artist, known for his photorealistic murals. Van Helten was raised in Brisbane and was a graffiti artist in his youth. He moved to Lismore, New South Wales to study visual arts at Southern Cross University, majoring in printmaking.",
+          website: "http://www.guidovanhelten.com/"
         },
         {
           artist: "ASKEW",
@@ -50,6 +59,11 @@ db.trail.insertMany([
           artistBio: "BEST | EVER are two like-minded painters from South London by way of the south coast. Since meeting in late 2008, the pair have developed a style that combines traditional painterly techniques with intricate aerosol realism. Influenced as much by Schiele and Klimt as by their combined experience as graffiti writers, BEST | EVER execute sensitive subject matters such as death, disease and mental illness with soul and wisdom that belies their youth.",
           website: "https://cargocollective.com/churchofbestever"
         },
+        {
+          artist: "Little Book Transfers",
+          artistBio: "Mural and illustration collective based in Glasgow.",
+          website: "https://www.facebook.com/littlebooktransfersglasgow/"
+        }
       },
       murals:
       {
@@ -61,7 +75,7 @@ db.trail.insertMany([
             latitude: -4.297550,
             area: "Maryhill Road"
           },
-          artist: "",
+          artist: "Rogue-One",
           image: "./client/assets/bobbybumble.jpg"
         },
         {
