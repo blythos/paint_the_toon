@@ -4,6 +4,7 @@
 </template>
 
 <script>
+import{eventBus} from '@/main.js';
 import L from 'leaflet';
 import Service from '@/services/Service.js'
 export default {
@@ -19,8 +20,7 @@ export default {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       murals: [],
       addedMarkers: [],
-      popup: null,
-      content: null
+      muralMarker: null
     }
   },
   mounted(){
@@ -39,7 +39,7 @@ export default {
     L.tileLayer(this.url, {attribution: this.attribution}).addTo(this.map);
 
     this.map.on('popupopen', (e) => {
-      console.log(e);
+      this.findMural(e.popup._content);
     })
 
   },
@@ -52,8 +52,14 @@ export default {
         message: message
       };
       this.addedMarkers.push(addedMarker)
-    }
+ },
+    findMural(name){
+      this.muralMarker =
+     this.murals.find(mural => mural.name === name);
+
+     eventBus.$emit('mural-selected', this.muralMarker);
   }
+}
 }
 </script>
 
