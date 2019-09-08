@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      zoom: 15,
+      zoom: 13,
       center: [55.865332, -4.258086],
       url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
@@ -22,8 +22,8 @@ export default {
   },
   mounted(){
     Service.getTrails()
-    .then(trails => this.murals = trails)
-
+    .then(trail => this.murals = trail)
+    .then(trail => trail.forEach(mural => this.addMarker([mural.location.longitude, mural.location.latitude], mural.name)))
 
     this.map = L.map('map');
     this.map.addEventListener('click', (e) => {
@@ -32,8 +32,6 @@ export default {
     });
     this.map.setView(this.center, this.zoom);
     L.tileLayer(this.url, {attribution: this.attribution}).addTo(this.map);
-    this.addMarker([55.865332, -4.258086], "Codeclan Glasgow");
-    this.addMarker([55.946910,-3.202068], "Codeclan Edinburgh");
   },
   methods: {
     addMarker(coords, message){
