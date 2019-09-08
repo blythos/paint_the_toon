@@ -26,7 +26,19 @@ db.trail.insertMany([
       {
         artist: "SmugOne",
         artistBio: "The Australian-born artist – real name Sam Bates – is originally from Nowra in New South Wales. He has lived in Scotland for 16 years."
-      }
+      },
+      {
+        artist: "Recoat",
+        artistBio: "Founded in 2007 by Amy Whiten and Alistair Wyllie, Recoat started out as a unique gallery space in Glasgow, providing a platform for Contemporary Urban Art and Design in Scotland."
+      },
+      {
+        artist: "Guido Van Helten",
+        artistBio: "Guido van Helten is an Australian artist, known for his photorealistic murals. Van Helten was raised in Brisbane and was a graffiti artist in his youth. He moved to Lismore, New South Wales to study visual arts at Southern Cross University, majoring in printmaking."
+      },
+      {
+        artist: "ASKEW",
+        artistBio: "Askew One/Elliot O’Donnell is a self-taught multi-disciplinary artist hailing from the capital of the South Pacific, Auckland, New Zealand. From his roots in his city’s graffiti scene during the early 90’s, he became one of the key figures known internationally from the region."
+      },
     },
     murals:
     {
@@ -130,6 +142,182 @@ db.trail.insertMany([
         image: "./client/assets/thegallery.jpg"
       },
       {
+        name: "Five Faces",
+        description: "This mural presents comical expressions of people playing with yoyos under the Caledonian Railway, Broomielaw.",
+        location: {
+          longitude: 55.856492,
+          latitude: -4.258771,
+          area: "City Centre"
+          },
+        artist: "",
+        image: "./client/assets/fivefaces.jpg"
+      },
+      {
+        name: "Glasgow's Tiger",
+        description: "Klingatron has collaborated with Art Pistol to re-imagine the original tiger design previously installed at this location. Incorporating a high level of detail, and occupying the same high profile location adjacent to South Portland Suspension Bridge, this mural is becoming as iconic as its predecessor.",
+        location: {
+          longitude: 55.855849,
+          latitude: -4.255137,
+          area: "City Centre"
+          },
+        artist: "",
+        image: "./client/assets/tiger.jpg"
+      },
+      {
+        name: "A View from the Clyde ",
+        description: "This original and somewhat comedic, surreal take on what lurks beneath the River Clyde depicts a variety of things more cheerful than what you would actually find.",
+        location: {
+          longitude: 55.854902,
+          latitude: -4.251434,
+          area: ""
+          },
+        artist: "",
+        image: "./client/assets/viewofclyde.jpg"
+      },
+      {
+        name: "Clutha Bar",
+        description: "The Clutha Bar features a fantastic mural on the outside wall, celebrating many of the famous faces that have been associated with the venue. From Alex Harvey, Frank Zappa, and Woody Guthrie to Billy Connolly, Benny Lynch and Stan Laurel, this piece of art highlights the unique people of the city's history.",
+        location: {
+          longitude: 55.854456,
+          latitude: -4.250408,
+          area: "City Centre"
+          },
+        artist: "",
+        image: "./client/assets/clutha.jpg"
+      },
+      {
+        name: "Big Birds",
+        description: "This long mural wraps around a wall on Howard Street and Dunlop Street, adjacent to the St. Enoch shopping center. The mural depicts giant birds escaping captivity—and a hungry cat waiting to pounce.",
+        location: {
+          longitude: 55.854694,
+          latitude: -4.251274,
+          area: "City Centre"
+          },
+        artist: "",
+        image: "./client/assets/bigbird.jpg"
+      },
+      {
+        name: "Spaceman",
+        description: "It has been informed by Pop, graphic novels, graphic design, and Japanese culture which you can see in the slick clean lines, colour choice and geometric patterned backgrounds.",
+        location: {
+          longitude: 55.857110,
+          latitude: -4.247121,
+          area: "City Centre"
+          },
+        artist: "recoat",
+        image: "./client/assets/spaceman.jpg"
+      },
+      {
+        name: "Argyle Cafe",
+        description: "A refreshed site, Smug’s reinterpretation of his previous installation is a fantastic twist to surprise the viewer.",
+        location: {
+          longitude: 55.857736,
+          latitude: -4.251472,
+          area: "City Centre"
+          },
+        artist: "smug",
+        image: "./client/assets/argylecafe.jpg"
+      },
+      {
+        name: "The World'd Most Economical Taxi",
+        description: "You'll find this fantastical floating taxi on Mitchell Street adjacent to Glasgow's Buchanan Street, capturing the attention of all who walk past.",
+        location: {
+          longitude: 55.857513,
+          latitude: -4.256755,
+          area: "City Centre"
+          },
+        artist: "Rogue-One",
+        image: "./client/assets/taxi.jpg"
+      },
+      {
+        name: "Honey I Shrunk The Kids",
+        description: "Another mural from the prolific Smug, Honey I Shrunk the Kids is on Mitchell Street but is a familiar sight when spotted from busy Argyle Street.",
+        location: {
+          longitude: 55.858605,
+          latitude: -4.255980,
+          area: "City Centre"
+          },
+        artist: "SmugOne",
+        image: "./client/assets/shrunkkids.jpg"
+      },
+      {
+        name: "Wind Power",
+        description: "Another imaginative image from Rogue-One and Art Pistol, this mural was originally conceived as a live installation as part of the Doors Open Day 2014 event and celebrates the diversity of sustainable energy production within the Glasgow area and Scotland nationally.",
+        location: {
+          longitude: 55.859649,
+          latitude: -4.255532,
+          area: "City Centre"
+          },
+        artist: "Rogue-One",
+        image: "./client/assets/windpower.jpg"
+      },
+      {
+        name: "Panda",
+        description: "This Giant Panda is at home in one of the city’s most interesting lanes, beside the bamboo gates of Gordon Lane.",
+        location: {
+          longitude: 55.859775,
+          latitude: -4.255050,
+          area: "City Centre"
+          },
+        artist: "Klingatron",
+        image: "./client/assets/panda.jpg"
+      },
+      {
+        name: "Badminton Player",
+        description: "Installed as part of the promotional campaign for 2014 Commonwealth Games, this mural is part of a series depicting various sports. Completed by the same artist, the other murals were installed adjacent to Partick Train Station and represent hockey, netball and rugby. The Badminton mural includes action shots of Scotland player Kieran Merrilees and conveys the speed of the game, as well as the athleticism required to succeed in such a competitive sport.",
+        location: {
+          longitude: 55.858448,
+          latitude: -4.247427,
+          area: "City Centre"
+          },
+        artist: "Guido Van Helten",
+        image: "./client/assets/badminton.jpg"
+      },
+      {
+        name: "Fellow Glasgow Residents",
+        description: "Before the gable end wall overlooking Ingram Street car park featured peeling paint and graffiti. Now thanks to the imagination of Smug it shows all types of animals found in Glasgow’s parks and green space appearing through what looks like holes in the wall.",
+        location: {
+          longitude: 55.859235,
+          latitude: -4.243895,
+          area: "City Centre"
+          },
+        artist: "SmugOne",
+        image: "./client/assets/residents.jpg"
+      },
+      {
+        name: "Puppet Master",
+        description: "The Hip-Hop Marionettes were made by Rogue-One, aided by Art Pistol, influenced by a Beastie Boys cover and a Run DMC picture.",
+        location: {
+          longitude: 55.861263,
+          latitude: -4.247516,
+          area: "City Centre"
+          },
+        artist: "Rogue-One",
+        image: "./client/assets/puppets.jpg"
+      },
+      {
+        name: "Strathclyde University Wonderwall",
+        description: "Covering more than 1,000 square metres and several stories, Strathclyde University's Wonderwall was commissioned to celebrate the 50th anniversary of the Royal Charter which conferred the University's status and also the 2014 Commonwealth Games.",
+        location: {
+          longitude: 55.861200,
+          latitude: -4.242625,
+          area: "City Centre"
+          },
+        artist: "Rogue-one and Ejek",
+        image: "./client/assets/lecture.jpg"
+      },
+      {
+        name: "In Common",
+        description: "This striking mural graces the six-story façade of the Townhead Campus building, part of the City of Glasgow college. The abstract, mirrored profiles of model and journalist Leilani Momoisea can’t be missed while driving along Cathedral Street. “In Common” was painted by her friend, a New Zealand artist named Askew, during the Festival 2014.",
+        location: {
+          longitude: 55.863461,
+          latitude: -4.246257,
+          area: "City Centre"
+          },
+        artist: "ASKEW",
+        image: "./client/assets/incommon.jpg"
+      },
+      {
         name: "",
         description: "",
         location: {
@@ -138,7 +326,7 @@ db.trail.insertMany([
           area: ""
           },
         artist: "",
-        image: ""
+        image: "./client/assets/.jpg"
       },
     }
   }
