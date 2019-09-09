@@ -1,15 +1,18 @@
 <template lang="html">
 <div id="rightPane">
-<button id="tabtop" @click="tab = 'details'">Details</button>
-<button id="tabtop" @click="tab = 'favourites'">Favourites</button>
+<button @click="tab = 'details'">Details</button>
+<button @click="tab = 'favourites'">Favourites</button>
+<button @click="tab = 'recommendations'">Nearby</button>
 <details-view  :favourites="favourites" v-if="chosenMural && tab === 'details'" :chosenMural="chosenMural" />
 <favourites-view :favourites="favourites" v-if="tab === 'favourites'" />
+<recommendations-view :recommendations="recommendations" v-if="tab === 'recommendations'"/>
 </div>
 </template>
 
 <script>
 import DetailsView from '@/components/DetailsView';
 import FavouritesView from '@/components/FavouritesView';
+import RecommendationsView from '@/components/RecommendationsView';
 export default {
   name: 'right-pane',
   data() {
@@ -19,9 +22,10 @@ export default {
   },
   components: {
     DetailsView,
-    FavouritesView
+    FavouritesView,
+    RecommendationsView
   },
-  props: ['chosenMural', 'favourites']
+  props: ['chosenMural', 'favourites', 'recommendations']
 }
 </script>
 

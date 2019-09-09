@@ -20,7 +20,8 @@
     data(){
       return{
         chosenMural: null,
-        favourites: []
+        favourites: [],
+        recommendations: ""
       }
     },
     mounted(){
