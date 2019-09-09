@@ -22,7 +22,7 @@ db.trail.insertMany([
         area: "Maryhill"
       },
       artist: "Elph",
-      image: "http://uncageddesign.co.uk/project-images/maryhill-community.jpg"
+      image: "http://uncageddesign.co.uk/project-images/maryhill-community.jpeg"
     },
     {
       name: "The Model Boat",
@@ -99,7 +99,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "SmugOne",
-      image: "http://uncageddesign.co.uk/project-images/thegallery.jpg"
+      image: "http://uncageddesign.co.uk/project-images/thegallery.jpeg"
     },
     {
       name: "Five Faces",
@@ -124,7 +124,7 @@ db.trail.insertMany([
       image: "http://uncageddesign.co.uk/project-images/tiger.jpg"
     },
     {
-      name: "A View from the Clyde ",
+      name: "A View from the Clyde",
       description: "This original and somewhat comedic, surreal take on what lurks beneath the River Clyde depicts a variety of things more cheerful than what you would actually find.",
       location: {
         longitude: 55.854902,
@@ -406,7 +406,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Little Book Transfers",
-      image: "http://uncageddesign.co.uk/project-images/charingbirds.jpg"
+      image: "http://uncageddesign.co.uk/project-images/charingbirds.jpeg"
     },
     {
       name: "Gorbel's Snake",
