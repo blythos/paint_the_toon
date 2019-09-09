@@ -13,10 +13,14 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     console.log(err);
   }
 
-  const db = client.db('RENAME');
-  const RENAMECollection = db.collection('RENAME');
-  const RENAMERouter = createRouter(RENAMECollection)
-  app.use('/api/RENAME', RENAMERouter);
+  const db = client.db('mural_trail');
+  const trailCollection = db.collection('trail');
+  const trailRouter = createRouter(trailCollection)
+  app.use('/api/trail', trailRouter);
+
+  const userCollection = db.collection('user');
+  const userRouter = createRouter(userCollection)
+  app.use('/api/user', userRouter);
 
   app.listen(3000, function(){
     console.log(`app listening on port ${this.address().port}`);
