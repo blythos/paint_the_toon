@@ -11,7 +11,7 @@ db.trail.insertMany([
         area: "Maryhill Road"
       },
       artist: "Rogue-One",
-      image: "./client/assets/bobbybumble.jpg"
+      image: "http://uncageddesign.co.uk/project-images/bobbybumble.jpg"
     },
     {
       name: "Maryhill Community Mural",
@@ -22,7 +22,7 @@ db.trail.insertMany([
         area: "Maryhill"
       },
       artist: "Elph",
-      image: "./client/assets/maryhill-community.jpg"
+      image: "http://uncageddesign.co.uk/project-images/maryhill-community.jpg"
     },
     {
       name: "The Model Boat",
@@ -33,7 +33,7 @@ db.trail.insertMany([
         area: "Partick"
       },
       artist: "Fintan Magee",
-      image: "./client/assets/modelboat.jpg"
+      image: "http://uncageddesign.co.uk/project-images/modelboat.jpg"
     },
     {
       name: "Yardworks Festivel",
@@ -44,7 +44,7 @@ db.trail.insertMany([
         area: "Yorkhill"
       },
       artist: "Various",
-      image: "./client/assets/Yardworks-2018.jpg"
+      image: "http://uncageddesign.co.uk/project-images/Yardworks-2018.jpg"
     },
     {
       name: "Empty Hands",
@@ -55,7 +55,7 @@ db.trail.insertMany([
         area: "Ibrox"
       },
       artist: "Faith47",
-      image: "./client/assets/empty-hands.jpg"
+      image: "http://uncageddesign.co.uk/project-images/empty-hands.jpg"
     },
     {
       name: "Charing Cross Croc",
@@ -66,7 +66,7 @@ db.trail.insertMany([
         area: "Charing Cross"
       },
       artist: "Klingatron",
-      image: "./client/assets/crocodile.jpg"
+      image: "http://uncageddesign.co.uk/project-images/crocodile.jpg"
     },
     {
       name: "Shadow Hand Puppets",
@@ -77,7 +77,7 @@ db.trail.insertMany([
         area: "Cowcaddens"
       },
       artist: "Rogue-One",
-      image: "./client/assets/shadowhands.jpg"
+      image: "http://uncageddesign.co.uk/project-images/shadowhands.jpg"
     },
     {
       name: "The Swimmer",
@@ -88,7 +88,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "SmugOne",
-      image: "./client/assets/The-Swimmer-Mural.jpg"
+      image: "http://uncageddesign.co.uk/project-images/The-Swimmer-Mural.jpg"
     },
     {
       name: "The Gallery",
@@ -99,7 +99,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "SmugOne",
-      image: "./client/assets/thegallery.jpg"
+      image: "http://uncageddesign.co.uk/project-images/thegallery.jpg"
     },
     {
       name: "Five Faces",
@@ -110,7 +110,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "SmugOne",
-      image: "@/assets/fivefaces.jpg"
+      image: "http://uncageddesign.co.uk/project-images/fivefaces.jpg"
     },
     {
       name: "Glasgow's Tiger",
@@ -121,7 +121,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Klingatron",
-      image: "@/assets/tiger.jpg"
+      image: "http://uncageddesign.co.uk/project-images/tiger.jpg"
     },
     {
       name: "A View from the Clyde ",
@@ -132,7 +132,7 @@ db.trail.insertMany([
         area: ""
       },
       artist: "Rogue-One",
-      image: "@/assets/viewofclyde.jpg"
+      image: "http://uncageddesign.co.uk/project-images/viewofclyde.jpg"
     },
     {
       name: "Clutha Bar",
@@ -143,7 +143,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Rogue-One and EJEK",
-      image: "@/assets/clutha.jpg"
+      image: "http://uncageddesign.co.uk/project-images/clutha.jpg"
     },
     {
       name: "Big Birds",
@@ -154,7 +154,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Rogue-One",
-      image: "@/assets/bigbird.jpg"
+      image: "http://uncageddesign.co.uk/project-images/bigbird.jpg"
     },
     {
       name: "Spaceman",
@@ -165,7 +165,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Recoat and Wyllie",
-      image: "@/assets/spaceman.jpg"
+      image: "http://uncageddesign.co.uk/project-images/spaceman.jpg"
     },
     {
       name: "Argyle Cafe",
@@ -176,7 +176,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "smug",
-      image: "@/assets/argylecafe.jpg"
+      image: "http://uncageddesign.co.uk/project-images/argylecafe.jpg"
     },
     {
       name: "The World'd Most Economical Taxi",
@@ -187,7 +187,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Rogue-One",
-      image: "@/assets/taxi.jpg"
+      image: "http://uncageddesign.co.uk/project-images/taxi.jpg"
     },
     {
       name: "Honey I Shrunk The Kids",
@@ -198,7 +198,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "SmugOne",
-      image: "@/assets/shrunkkids.jpg"
+      image: "http://uncageddesign.co.uk/project-images/shrunkkids.jpg"
     },
     {
       name: "Wind Power",
@@ -209,7 +209,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Rogue-One",
-      image: "@/assets/windpower.jpg"
+      image: "http://uncageddesign.co.uk/project-images/windpower.jpg"
     },
     {
       name: "Panda",
@@ -220,7 +220,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Klingatron",
-      image: "@/assets/panda.jpg"
+      image: "http://uncageddesign.co.uk/project-images/panda.jpg"
     },
     {
       name: "Badminton Player",
@@ -231,7 +231,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Guido Van Helten",
-      image: "@/assets/badminton.jpg"
+      image: "http://uncageddesign.co.uk/project-images/badminton.jpg"
     },
     {
       name: "Fellow Glasgow Residents",
@@ -242,7 +242,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "SmugOne",
-      image: "@/assets/residents.jpg"
+      image: "http://uncageddesign.co.uk/project-images/residents.jpg"
     },
     {
       name: "Puppet Master",
@@ -253,7 +253,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Rogue-One",
-      image: "@/assets/puppets.jpg"
+      image: "http://uncageddesign.co.uk/project-images/puppets.jpg"
     },
     {
       name: "Strathclyde University Wonderwall",
@@ -264,7 +264,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Rogue-one and Ejek",
-      image: "@/assets/lecture.jpg"
+      image: "http://uncageddesign.co.uk/project-images/lecture.jpg"
     },
     {
       name: "In Common",
@@ -275,7 +275,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "ASKEW",
-      image: "@/assets/incommon.jpg"
+      image: "http://uncageddesign.co.uk/project-images/incommon.jpg"
     },
     {
       name: "Barras Mural",
@@ -285,7 +285,7 @@ db.trail.insertMany([
         latitude: -4.238415,
         area: "East End"
       },
-      image: "@/assets/kingbarras.jpg"
+      image: "http://uncageddesign.co.uk/project-images/kingbarras.jpg"
     },
     {
       name: "Pirate Girl",
@@ -296,7 +296,7 @@ db.trail.insertMany([
         area: "East End"
       },
       artist: "Rogue-One",
-      image: "@/assets/pirategirl.jpg"
+      image: "http://uncageddesign.co.uk/project-images/pirategirl.jpg"
     },
     {
       name: "In:Common",
@@ -307,7 +307,7 @@ db.trail.insertMany([
         area: "East End"
       },
       artist: "Best|Ever",
-      image: "@/assets/bigwoman.jpg"
+      image: "http://uncageddesign.co.uk/project-images/bigwoman.jpg"
     },
     {
       name: "St Luke's and the Bull",
@@ -318,7 +318,7 @@ db.trail.insertMany([
         area: "East End"
       },
       artist: "SmugOne",
-      image: "@/assets/stluke.jpg"
+      image: "http://uncageddesign.co.uk/project-images/stluke.jpg"
     },
     {
       name: "St Enoch and Child",
@@ -329,7 +329,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "SmugOne",
-      image: "@/assets/enoch.jpg"
+      image: "http://uncageddesign.co.uk/project-images/enoch.jpg"
     },
     {
       name: "St Mungo",
@@ -340,7 +340,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "SmugOne",
-      image: "@/assets/mungo.jpg"
+      image: "http://uncageddesign.co.uk/project-images/mungo.jpg"
     },
     {
       name: "The Musician",
@@ -351,7 +351,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Rogue-One",
-      image: "@/assets/musician.jpg"
+      image: "http://uncageddesign.co.uk/project-images/musician.jpg"
     },
     {
       name: "The Lost Giant",
@@ -362,7 +362,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Stormie Mills",
-      image: "@/assets/lostgiant.jpg"
+      image: "http://uncageddesign.co.uk/project-images/lostgiant.jpg"
     },
     {
       name: "Dr Connelly I Presume?",
@@ -373,7 +373,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Rogue-One",
-      image: "@/assets/drbilly.jpg"
+      image: "http://uncageddesign.co.uk/project-images/drbilly.jpg"
     },
     {
       name: "Billy Connelly",
@@ -384,7 +384,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Rogue-One",
-      image: "@/assets/billyconnelly.jpg"
+      image: "http://uncageddesign.co.uk/project-images/billyconnelly.jpg"
     },
     {
       name: "A Study of a Woman in Black",
@@ -395,7 +395,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Klingatron",
-      image: "@/assets/womaninblack.jpg"
+      image: "http://uncageddesign.co.uk/project-images/womaninblack.jpg"
     },
     {
       name: "Charing Cross Birds",
@@ -406,7 +406,18 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Little Book Transfers",
-      image: "@/assets/charingbirds.jpg"
+      image: "http://uncageddesign.co.uk/project-images/charingbirds.jpg"
+    },
+    {
+      name: "Gorbel's Snake",
+      description: "Art Pistol and Little Book Transfers found the perfect location to continue LBT’s ‘STALK’ series depicting birds, foliage and fruit together. The graphic style and detailed illustration provides something a little different for Glasgow’s walls.",
+      location: {
+        longitude: 55.866873,
+        latitude: -4.272305,
+        area: "Southside"
+      },
+      artist: "Little Book Transfers",
+      image: "http://uncageddesign.co.uk/project-images/.jpg"
     }
 ]);
 
