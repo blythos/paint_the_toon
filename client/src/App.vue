@@ -1,8 +1,10 @@
 <template lang="html">
   <div>
     <header-section />
+    <div id="main">
       <VueMap />
       <right-pane :favourites="favourites" :chosenMural="chosenMural"></right-pane>
+    </div>
     </div>
 
   </template>
@@ -40,4 +42,8 @@
   </script>
 
   <style lang="css" scoped>
+    #main {
+      display: flex;
+      justify-content: space-between;
+    }
   </style>

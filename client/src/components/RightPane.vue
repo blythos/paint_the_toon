@@ -1,5 +1,5 @@
 <template lang="html">
-<div>
+<div id="rightPane">
 <button @click="tab = 'details'">Details</button>
 <button @click="tab = 'favourites'">Favourites</button>
 <details-view  :favourites="favourites" v-if="chosenMural && tab === 'details'" :chosenMural="chosenMural" />
@@ -26,4 +26,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
+#rightPane {
+	width:49vw;
+	height:80vh;
+}
 </style>

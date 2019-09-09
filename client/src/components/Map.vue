@@ -65,7 +65,7 @@ export default {
 
 <style lang="css" scoped>
 #map {
-	width:50vw;
+	width:49vw;
 	height:80vh;
 }
 @import "~leaflet/dist/leaflet.css";
