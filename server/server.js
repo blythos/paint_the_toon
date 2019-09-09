@@ -18,6 +18,10 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
   const trailRouter = createRouter(trailCollection)
   app.use('/api/trail', trailRouter);
 
+  const userCollection = db.collection('user');
+  const userRouter = createRouter(userCollection)
+  app.use('/api/user', userRouter);
+
   app.listen(3000, function(){
     console.log(`app listening on port ${this.address().port}`);
   })

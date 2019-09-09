@@ -11,7 +11,7 @@ db.trail.insertMany([
         area: "Maryhill Road"
       },
       artist: "Rogue-One",
-      image: "./client/assets/bobbybumble.jpg"
+      image: "./assets/bobbybumble.jpg"
     },
     {
       name: "Maryhill Community Mural",
@@ -22,7 +22,7 @@ db.trail.insertMany([
         area: "Maryhill"
       },
       artist: "Elph",
-      image: "./client/assets/maryhill-community.jpg"
+      image: "./assets/maryhill-community.jpg"
     },
     {
       name: "The Model Boat",
@@ -33,7 +33,7 @@ db.trail.insertMany([
         area: "Partick"
       },
       artist: "Fintan Magee",
-      image: "./client/assets/modelboat.jpg"
+      image: "./assets/modelboat.jpg"
     },
     {
       name: "Yardworks Festivel",
@@ -44,7 +44,7 @@ db.trail.insertMany([
         area: "Yorkhill"
       },
       artist: "Various",
-      image: "./client/assets/Yardworks-2018.jpg"
+      image: "./assets/Yardworks-2018.jpg"
     },
     {
       name: "Empty Hands",
@@ -55,7 +55,7 @@ db.trail.insertMany([
         area: "Ibrox"
       },
       artist: "Faith47",
-      image: "./client/assets/empty-hands.jpg"
+      image: "./assets/empty-hands.jpg"
     },
     {
       name: "Charing Cross Croc",
@@ -66,7 +66,7 @@ db.trail.insertMany([
         area: "Charing Cross"
       },
       artist: "Klingatron",
-      image: "./client/assets/crocodile.jpg"
+      image: "./assets/crocodile.jpg"
     },
     {
       name: "Shadow Hand Puppets",
@@ -77,7 +77,7 @@ db.trail.insertMany([
         area: "Cowcaddens"
       },
       artist: "Rogue-One",
-      image: "./client/assets/shadowhands.jpg"
+      image: "./assets/shadowhands.jpg"
     },
     {
       name: "The Swimmer",
@@ -88,7 +88,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "SmugOne",
-      image: "./client/assets/The-Swimmer-Mural.jpg"
+      image: "./assets/The-Swimmer-Mural.jpg"
     },
     {
       name: "The Gallery",
@@ -99,7 +99,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "SmugOne",
-      image: "./client/assets/thegallery.jpg"
+      image: "./assets/thegallery.jpg"
     },
     {
       name: "Five Faces",
