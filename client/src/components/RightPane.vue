@@ -10,11 +10,17 @@
 </template>
 
 <script>
+import {eventBus} from '@/main.js'
 import DetailsView from '@/components/DetailsView';
 import FavouritesView from '@/components/FavouritesView';
 import RecommendationsView from '@/components/RecommendationsView';
 export default {
   name: 'right-pane',
+  mounted() {
+    eventBus.$on('mural-selected', () => {
+      this.tab = 'details';
+    })
+  },
   data() {
     return {
       tab: 'details'
