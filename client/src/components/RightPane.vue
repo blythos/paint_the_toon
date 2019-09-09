@@ -1,7 +1,7 @@
 <template lang="html">
 <div id="rightPane">
-<button @click="tab = 'details'">Details</button>
-<button @click="tab = 'favourites'">Favourites</button>
+<button id="tabtop" @click="tab = 'details'">Details</button>
+<button id="tabtop" @click="tab = 'favourites'">Favourites</button>
 <details-view  :favourites="favourites" v-if="chosenMural && tab === 'details'" :chosenMural="chosenMural" />
 <favourites-view :favourites="favourites" v-if="tab === 'favourites'" />
 </div>
@@ -29,5 +29,10 @@ export default {
 #rightPane {
 	width:49vw;
 	height:80vh;
+}
+
+#tabtop {
+  background-color: grey;
+  height: 4vh;
 }
 </style>
