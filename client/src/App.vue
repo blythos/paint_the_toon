@@ -2,7 +2,7 @@
   <div>
     <header-section />
       <VueMap />
-      <right-pane :chosenMural="chosenMural"></right-pane>
+      <right-pane :favourites="favourites" :chosenMural="chosenMural"></right-pane>
     </div>
 
   </template>
@@ -17,7 +17,8 @@
     name: 'app',
     data(){
       return{
-        chosenMural: null
+        chosenMural: null,
+        favourites: []
       }
     },
     mounted(){
@@ -25,6 +26,9 @@
         this.chosenMural = mural;
 
       })
+      eventBus.$on('mural-favourited', (mural) => {
+    this.favourites.push(mural);
+  })
     },
     components: {
       VueMap,

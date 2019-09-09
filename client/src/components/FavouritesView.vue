@@ -1,9 +1,13 @@
 <template lang="html">
-<p>hello world</p>
+  <div>
+<p v-for="chosenMural of this.favourites">{{chosenMural.name}}</p>
+</div>
 </template>
 
 <script>
 export default {
+  name: 'favourites-view',
+  props: ['favourites']
 }
 </script>
 
