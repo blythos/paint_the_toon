@@ -63,7 +63,12 @@ db.trail.insertMany([
           artist: "Little Book Transfers",
           artistBio: "Mural and illustration collective based in Glasgow.",
           website: "https://www.facebook.com/littlebooktransfersglasgow/"
-        }
+        },
+        {
+          artist: "Conzo Throb",
+          artistBio: "UK (Glasgow) Based Illustrator / Graffiti Dabbler / Designer / Visual Mischief Coordinator",
+          website: "http://www.conzo.co.uk/"
+        },
       },
       murals:
       {
@@ -76,7 +81,7 @@ db.trail.insertMany([
             area: "Maryhill Road"
           },
           artist: "Rogue-One",
-          image: "./client/assets/bobbybumble.jpg"
+          image: "@/assets/bobbybumble.jpg"
         },
         {
           name: "Maryhill Community Mural",
@@ -86,8 +91,8 @@ db.trail.insertMany([
             latitude: -4.283713,
             area: "Maryhill"
           },
-          artist: "",
-          image: "./client/assets/maryhill-community.jpg"
+          artist: "Elph",
+          image: "@/assets/maryhill-community.jpg"
         },
         {
           name: "The Model Boat",
@@ -97,8 +102,8 @@ db.trail.insertMany([
             latitude: -4.305267,
             area: "Partick"
           },
-          artist: "",
-          image: "./client/assets/modelboat.jpg"
+          artist: "Fintan Magee",
+          image: "@/assets/modelboat.jpg"
         },
         {
           name: "Yardworks Festivel",
@@ -108,8 +113,8 @@ db.trail.insertMany([
             latitude: -4.299762,
             area: "Yorkhill"
           },
-          artist: "",
-          image: "./client/assets/Yardworks-2018.jpg"
+          artist: "Various Artist",
+          image: "@/assets/Yardworks-2018.jpg"
         },
         {
           name: "Empty Hands",
@@ -119,8 +124,8 @@ db.trail.insertMany([
             latitude: -4.305528,
             area: "Ibrox"
           },
-          artist: "",
-          image: "./client/assets/empty-hands.jpg"
+          artist: "Faith47",
+          image: "@/assets/empty-hands.jpg"
         },
         {
           name: "Charing Cross Croc",
@@ -130,8 +135,8 @@ db.trail.insertMany([
             latitude: -4.272305,
             area: "Charing Cross"
           },
-          artist: "",
-          image: "./client/assets/crocodile.jpg"
+          artist: "Klingatron",
+          image: "@/assets/crocodile.jpg"
         },
         {
           name: "Shadow Hand Puppets",
@@ -141,8 +146,8 @@ db.trail.insertMany([
             latitude: -4.260333,
             area: "Cowcaddens"
           },
-          artist: "",
-          image: "./client/assets/shadowhands.jpg"
+          artist: "Rogue-One",
+          image: "@/assets/shadowhands.jpg"
         },
         {
           name: "The Swimmer",
@@ -152,8 +157,8 @@ db.trail.insertMany([
             latitude: -4.270283,
             area: "City Centre"
           },
-          artist: "",
-          image: "./client/assets/The-Swimmer-Mural.jpg"
+          artist: "SmugOne",
+          image: "@/assets/The-Swimmer-Mural.jpg"
         },
         {
           name: "The Gallery",
@@ -163,8 +168,8 @@ db.trail.insertMany([
             latitude: -4.262486,
             area: "City Centre"
           },
-          artist: "",
-          image: "./client/assets/thegallery.jpg"
+          artist: "SmugOne",
+          image: "@/assets/thegallery.jpg"
         },
         {
           name: "Five Faces",
@@ -174,8 +179,8 @@ db.trail.insertMany([
             latitude: -4.258771,
             area: "City Centre"
           },
-          artist: "",
-          image: "./client/assets/fivefaces.jpg"
+          artist: "SmugOne",
+          image: "@/assets/fivefaces.jpg"
         },
         {
           name: "Glasgow's Tiger",
@@ -185,8 +190,8 @@ db.trail.insertMany([
             latitude: -4.255137,
             area: "City Centre"
           },
-          artist: "",
-          image: "./client/assets/tiger.jpg"
+          artist: "Klingatron",
+          image: "@/assets/tiger.jpg"
         },
         {
           name: "A View from the Clyde ",
@@ -196,8 +201,8 @@ db.trail.insertMany([
             latitude: -4.251434,
             area: ""
           },
-          artist: "",
-          image: "./client/assets/viewofclyde.jpg"
+          artist: "Rogue-One",
+          image: "@/assets/viewofclyde.jpg"
         },
         {
           name: "Clutha Bar",
@@ -207,8 +212,8 @@ db.trail.insertMany([
             latitude: -4.250408,
             area: "City Centre"
           },
-          artist: "",
-          image: "./client/assets/clutha.jpg"
+          artist: "Rogue-One and EJEK",
+          image: "@/assets/clutha.jpg"
         },
         {
           name: "Big Birds",
@@ -218,8 +223,8 @@ db.trail.insertMany([
             latitude: -4.251274,
             area: "City Centre"
           },
-          artist: "",
-          image: "./client/assets/bigbird.jpg"
+          artist: "Rogue-One",
+          image: "@/assets/bigbird.jpg"
         },
         {
           name: "Spaceman",
@@ -229,7 +234,7 @@ db.trail.insertMany([
             latitude: -4.247121,
             area: "City Centre"
           },
-          artist: "recoat",
+          artist: "Recoat and Wyllie",
           image: "./client/assets/spaceman.jpg"
         },
         {
