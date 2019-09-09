@@ -2,8 +2,8 @@
 <div>
 <button @click="tab = 'details'">Details</button>
 <button @click="tab = 'favourites'">Favourites</button>
-<details-view v-if="chosenMural && tab === 'details'" :chosenMural="chosenMural" />
-<favourites-view v-if="tab === 'favourites'" />
+<details-view  :favourites="favourites" v-if="chosenMural && tab === 'details'" :chosenMural="chosenMural" />
+<favourites-view :favourites="favourites" v-if="tab === 'favourites'" />
 </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
     DetailsView,
     FavouritesView
   },
-  props: ['chosenMural']
+  props: ['chosenMural', 'favourites']
 }
 </script>
 
