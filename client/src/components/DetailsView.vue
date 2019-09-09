@@ -2,7 +2,7 @@
   <div>
     Name: {{ chosenMural.name}}
     Artist: {{ chosenMural.artist}}
-    {{chosenMural.image}}
+      <img :src="chosenMural.image">
     Details:  {{chosenMural.description}}
     Location: {{chosenMural.location.area}}
     <button @click="addToFavourites()" v-if="!this.favourites.includes(this.chosenMural)">Add to favourites</button>
