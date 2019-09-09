@@ -410,14 +410,14 @@ db.trail.insertMany([
     },
     {
       name: "Gorbel's Snake",
-      description: "Art Pistol and Little Book Transfers found the perfect location to continue LBT’s ‘STALK’ series depicting birds, foliage and fruit together. The graphic style and detailed illustration provides something a little different for Glasgow’s walls.",
+      description: "Reports of a giant snake in the Gorbals, in Glasgow’s south side have not been exaggerated! But worry not, it’s just a mural by Ejek, even the little mouse seems to be safe from getting eaten. ",
       location: {
-        longitude: 55.866873,
-        latitude: -4.272305,
+        longitude: 55.848327,
+        latitude: -4.255068,
         area: "Southside"
       },
-      artist: "Little Book Transfers",
-      image: "http://uncageddesign.co.uk/project-images/.jpg"
+      artist: "EJEK",
+      image: "http://uncageddesign.co.uk/project-images/snake.jpg"
     }
 ]);
 
