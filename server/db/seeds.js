@@ -2,6 +2,7 @@ use mural_trail;
 db.dropDatabase();
 
 db.trail.insertMany([
+
   {
     artists: {
         {

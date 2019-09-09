@@ -13,10 +13,10 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     console.log(err);
   }
 
-  const db = client.db('test_db');
-  const testingCollection = db.collection('testing');
-  const testRouter = createRouter(testingCollection)
-  app.use('/api/test', testRouter);
+  const db = client.db('mural_trail');
+  const trailCollection = db.collection('trail');
+  const trailRouter = createRouter(trailCollection)
+  app.use('/api/trail', trailRouter);
 
   app.listen(3000, function(){
     console.log(`app listening on port ${this.address().port}`);
