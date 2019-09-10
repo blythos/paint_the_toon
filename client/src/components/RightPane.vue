@@ -56,14 +56,13 @@ export default {
 }
 
 .tab {
-  min-height:70vh;
+  height:70vh;
+  overflow-y: scroll;
 }
 
 .tabs {
   display: flex;
   flex-wrap: wrap;
-  background: white;
-
 }
 
 .tabs label {
@@ -75,6 +74,7 @@ export default {
   background:  slategrey;
   color: snow;
   font-weight: bold;
+  font-size: 1em;
   transition: ease 0.2s;
 }
 
@@ -84,7 +84,7 @@ export default {
   width: 100%;
   display: none;
   padding: 1rem;
-  background: #fff;
+  background: #FBFBFB;
 }
 
 .tabs input[type="radio"] {
@@ -92,9 +92,8 @@ export default {
 }
 
 .tabs input[type="radio"]:checked + label {
-  background: #fff;
+  background: #FBFBFB;
   color: black;
-  /* border: 1px solid black; */
 }
 
 .tabs input[type="radio"]:checked + label + .tab {

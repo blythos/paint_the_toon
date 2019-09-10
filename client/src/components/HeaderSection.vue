@@ -24,5 +24,6 @@ h1 {
   margin-left: 2vw;
   margin-top: 4vh;
   color: dimgrey;
+  font-size: 2.3em;
 }
 </style>

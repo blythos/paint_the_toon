@@ -6,8 +6,9 @@
     </div>
     <img :src="chosenMural.image">
     <p>{{chosenMural.description}}</p>
-    <p>Location: {{chosenMural.location.area}}</p>
+    <p><strong>Location:</strong> {{chosenMural.location.area}}</p>
     <button @click="addToFavourites()" v-if="!this.favourites.includes(this.chosenMural)">Add to favourites</button>
+
   </div>
 
 </template>
@@ -29,12 +30,18 @@ export default {
 h1 {
   padding: 0;
   margin: 0;
+  font-size: 2em;
 }
 
 h3 {
   padding: 0  1vw;
   margin: 0.2vw 0;
   color: dimgrey;
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1em;
 }
 
 img {
@@ -45,7 +52,12 @@ img {
 #title {
   display: flex;
   align-items: flex-end;
-  /* justify-content: space-around; */
+}
+
+button {
+  height: 4vh;
+  color: white;
+  background: cadetblue;
 }
 </style>
 
