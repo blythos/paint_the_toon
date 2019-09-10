@@ -9,7 +9,7 @@
     <p><strong>Location: </strong> <a :href="`https://www.google.com/maps/search/?api=1&query=${chosenMural.location.longitude},${chosenMural.location.latitude}`" target="_blank">{{chosenMural.location.area}}</a></p>
     <div id="userInput">
       <button @click="addToFavourites()" v-if="!this.favourites.includes(this.chosenMural)">Add to favourites</button>
-      <star-rating :star-size="20" :show-rating="false" :rounded-corners="true" :padding="2"></star-rating>
+      <star-rating :star-size="20" :show-rating="false" :rounded-corners="true" :padding="2" @click="setRating" v-model="rating"></star-rating>
     </div>
   </div>
 
@@ -34,11 +34,12 @@ export default {
     addToFavourites: function() {eventBus.$emit('mural-favourited', this.chosenMural);
   },
 
-    setRating: function(rating) {
-    this.rating = rating;
+    setRating: function(_id) {
+
+    }
   }
 }
-}
+
 
 </script>
 
