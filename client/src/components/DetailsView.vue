@@ -14,12 +14,16 @@
 </template>
 
 <script>
+import Service from '@/services/Service.js'
 import {eventBus} from '@/main.js'
 export default {
   name: 'details-view',
   props: ['chosenMural', 'favourites'],
   methods: {
-    addToFavourites: function() {eventBus.$emit('mural-favourited', this.chosenMural);
+    addToFavourites: function() {
+      this.chosenMural.favourite = true;
+      // Service.editTrail(this.chosenMural._id, this.chosenMural);
+      eventBus.$emit('mural-favourited', this.chosenMural);
   }
 }
 }
