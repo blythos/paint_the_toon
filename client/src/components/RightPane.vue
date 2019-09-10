@@ -55,9 +55,15 @@ export default {
 	height:80vh;
 }
 
+.tab {
+  min-height:70vh;
+}
+
 .tabs {
   display: flex;
   flex-wrap: wrap;
+  background: white;
+
 }
 
 .tabs label {
@@ -88,7 +94,7 @@ export default {
 .tabs input[type="radio"]:checked + label {
   background: #fff;
   color: black;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .tabs input[type="radio"]:checked + label + .tab {

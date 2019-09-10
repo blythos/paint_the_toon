@@ -1,11 +1,12 @@
 <template lang="html">
   <div>
-    Name: {{ chosenMural.name}}
-    Artist: {{ chosenMural.artist}}
+    <div id="title">
+      <h1>{{ chosenMural.name}}</h1>
+      <h3>{{ chosenMural.artist}}</h3>
+    </div>
     <img :src="chosenMural.image">
-
-    Details:  {{chosenMural.description}}
-    Location: {{chosenMural.location.area}}
+    <p>{{chosenMural.description}}</p>
+    <p>Location: {{chosenMural.location.area}}</p>
     <button @click="addToFavourites()" v-if="!this.favourites.includes(this.chosenMural)">Add to favourites</button>
   </div>
 
@@ -25,8 +26,26 @@ export default {
 </script>
 
 <style lang="css" scoped>
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  padding: 0  1vw;
+  margin: 0.2vw 0;
+  color: dimgrey;
+}
+
 img {
-  width: 49vw;
+  margin-top: 1vw;
+  max-width: 46vw;
+}
+
+#title {
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: space-around; */
 }
 </style>
 
