@@ -7,19 +7,35 @@
     <img :src="chosenMural.image">
     <p>{{chosenMural.description}}</p>
     <p><strong>Location: </strong> <a :href="`https://www.google.com/maps/search/?api=1&query=${chosenMural.location.longitude},${chosenMural.location.latitude}`" target="_blank">{{chosenMural.location.area}}</a></p>
-    <button @click="addToFavourites()" v-if="!this.favourites.includes(this.chosenMural)">Add to favourites</button>
-
+    <div id="userInput">
+      <button @click="addToFavourites()" v-if="!this.favourites.includes(this.chosenMural)">Add to favourites</button>
+      <star-rating :star-size="20" :show-rating="false" :rounded-corners="true" :padding="2"></star-rating>
+    </div>
   </div>
 
 </template>
 
 <script>
 import {eventBus} from '@/main.js'
+import StarRating from 'vue-star-rating'
+
 export default {
   name: 'details-view',
   props: ['chosenMural', 'favourites'],
+  data() {
+    return {
+      rating: 0
+    }
+  },
+  components: {
+    StarRating
+  },
   methods: {
     addToFavourites: function() {eventBus.$emit('mural-favourited', this.chosenMural);
+  },
+
+    setRating: function(rating) {
+    this.rating = rating;
   }
 }
 }
@@ -68,6 +84,10 @@ a:link, a:visited, a:active {
 a:hover {
   color: black;
   text-decoration: underline;
+}
+
+#userInput {
+  display: flex;
 }
 </style>
 
