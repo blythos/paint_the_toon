@@ -6,7 +6,7 @@
     </div>
     <img :src="chosenMural.image">
     <p>{{chosenMural.description}}</p>
-    <p><strong>Location:</strong> {{chosenMural.location.area}}</p>
+    <p><strong>Location: </strong> <a :href="`https://www.google.com/maps/search/?api=1&query=${chosenMural.location.longitude},${chosenMural.location.latitude}`" target="_blank">{{chosenMural.location.area}}</a></p>
     <button @click="addToFavourites()" v-if="!this.favourites.includes(this.chosenMural)">Add to favourites</button>
 
   </div>
@@ -58,6 +58,16 @@ button {
   height: 4vh;
   color: white;
   background: cadetblue;
+}
+
+a:link, a:visited, a:active {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
 }
 </style>
 
