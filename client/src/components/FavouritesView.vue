@@ -3,7 +3,7 @@
     <div v-for="mural of this.favourites">
       <p>{{mural.name}}</p>
       <button @click.prevent="handleDelete(mural._id)">Delete</button>
-      <p>{{mural.location.area}}</p>
+      <!-- <p>{{mural.location.area}}</p> -->
       <p><img :src="mural.image"></p>
       <!-- <input type="text"> -->
       <textarea name="message" v-model="review" placeholder="submit your reviews!" rows="10" cols="30">
@@ -20,14 +20,20 @@
 
 <script>
 import{eventBus} from '@/main.js';
+import Service from '@/services/Service.js';
 
 export default {
   name: 'favourites-view',
   props: ['chosenMural','favourites'],
   data(){
     return{
-      review: ""
+      review: "",
+      allFavourites: []
+
     }
+  },
+  Mounted(){
+
   },
   methods: {
 
@@ -38,7 +44,7 @@ export default {
 
     handleSubmit(){
 
-	   
+
 
 
     }

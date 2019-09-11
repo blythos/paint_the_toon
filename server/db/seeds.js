@@ -489,6 +489,31 @@ db.artists.insertMany([
   }
 ]);
 
+db.favourites.insertMany([
+    {
+      name: "Bobby and the Bumble",
+      description: "A black Scotty dog looking at a bumble bee.",
+      location: {
+        longitude: 55.894693,
+        latitude: -4.297550,
+        area: "Maryhill Road"
+      },
+      artist: "Rogue-One",
+      image: "http://uncageddesign.co.uk/project-images/bobbybumble.jpg"
+    },
+    {
+      name: "Maryhill Community Mural",
+      description: "Created with the help of pupils from the East Park School, this mural is colourful and distinctive. It can be found at 1148 Maryhill Road.",
+      location: {
+        longitude: 55.886394,
+        latitude: -4.283713,
+        area: "Maryhill"
+      },
+      artist: "Elph",
+      image: "http://uncageddesign.co.uk/project-images/maryhill-community.jpeg"
+    }
+  ])
+
 db.user.insertMany([
   {
     name: "test1"
