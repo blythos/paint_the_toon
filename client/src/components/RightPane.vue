@@ -71,7 +71,7 @@ export default {
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background:  slategrey;
+  background:  darkcyan;
   color: snow;
   font-weight: bold;
   font-size: 1em;
@@ -84,7 +84,7 @@ export default {
   width: 100%;
   display: none;
   padding: 1rem;
-  background: #FBFBFB;
+  background: #f0f0f0;
 }
 
 .tabs input[type="radio"] {
@@ -92,7 +92,7 @@ export default {
 }
 
 .tabs input[type="radio"]:checked + label {
-  background: #FBFBFB;
+  background: #f0f0f0;
   color: black;
 }
 
