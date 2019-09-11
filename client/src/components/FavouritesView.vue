@@ -1,17 +1,25 @@
 <template lang="html">
-  <form>
+  <form id="favlist">
     <div v-for="mural of this.favourites">
-      <p>{{mural.name}}</p>
-      <button @click.prevent="handleDelete(mural._id)">Delete</button>
-      <!-- <p>{{mural.location.area}}</p> -->
-      <p><img :src="mural.image"></p>
+      <div id="favDetail">
+        <img :src="mural.image">
+        <h3>{{mural.name}}</h3>
+        <!-- <p>{{mural.location.area}}</p> -->
+        <button @click.prevent="handleDelete(mural._id)">Delete</button>
+      </div>
       <!-- <input type="text"> -->
-      <textarea name="message" v-model="review" placeholder="submit your reviews!" rows="10" cols="30">
-      </textarea>
-      <button @click="handleSubmit">Submit</button>
+      <div id="faveInput">
+        <textarea name="message" v-model="review" placeholder="submit your reviews!" rows="10" cols="30">
+        </textarea>
+        <button @click="handleSubmit">Submit</button>
 
-    <li>  {{review}}
-      </li>
+      <ul>
+        <li>
+        {{review}}
+        </li>
+      </ul>
+
+      </div>
     </div>
   </form>
 
@@ -56,4 +64,27 @@ export default {
 
 
 <style lang="css" scoped>
+#favlist {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#favDetail {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+#faveInput {
+
+}
+
+img {
+  max-width: 6vw;
+  max-height: 8vh;
+  margin-right: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
 </style>
