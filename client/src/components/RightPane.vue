@@ -13,7 +13,7 @@
       <favourites-view :favourites="favourites" v-if="tab === 'favourites'" />
     </div>
 
-  
+
   </div>
 </div>
 </template>
@@ -22,7 +22,6 @@
 import {eventBus} from '@/main.js'
 import DetailsView from '@/components/DetailsView';
 import FavouritesView from '@/components/FavouritesView';
-import RecommendationsView from '@/components/RecommendationsView';
 export default {
   name: 'right-pane',
   mounted() {
@@ -38,8 +37,7 @@ export default {
   },
   components: {
     DetailsView,
-    FavouritesView,
-    RecommendationsView
+    FavouritesView
   },
   props: ['chosenMural', 'favourites', 'recommendations']
 }
