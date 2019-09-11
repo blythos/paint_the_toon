@@ -13,11 +13,7 @@
       <favourites-view :favourites="favourites" v-if="tab === 'favourites'" />
     </div>
 
-    <input type="radio" name="tabs" id="tabthree" @click="tab = 'recommendations'">
-    <label for="tabthree">Nearby</label>
-    <div class="tab">
-      <recommendations-view :recommendations="recommendations" v-if="tab === 'recommendations'"/>
-    </div>
+  
   </div>
 </div>
 </template>
