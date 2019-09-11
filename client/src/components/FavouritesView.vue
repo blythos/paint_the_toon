@@ -9,7 +9,7 @@
       </div>
       <!-- <input type="text"> -->
       <div id="faveInput">
-        <textarea name="message" v-model="review" placeholder="submit your reviews!" rows="10" cols="30">
+        <textarea name="message" v-model="review" placeholder="submit your reviews!">
         </textarea>
         <button @click="handleSubmit">Submit</button>
 
@@ -18,7 +18,7 @@
         {{review}}
         </li>
       </ul>
-
+      <hr>
       </div>
     </div>
   </form>
@@ -68,12 +68,14 @@ export default {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  margin-bottom: 4vh;
 }
 
 #favDetail {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
+  align-items: center;
 }
 
 #faveInput {
@@ -83,8 +85,38 @@ export default {
 img {
   max-width: 6vw;
   max-height: 8vh;
-  margin-right: 0.5vw;
   margin-bottom: 0.5vw;
+}
+
+button {
+  height: 4vh;
+  width: 10vw;
+  color: white;
+  background: darkcyan;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+h3 {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+textarea {
+  width: 40vw;
+  height: 5vh;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 </style>
