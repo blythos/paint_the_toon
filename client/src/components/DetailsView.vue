@@ -4,7 +4,7 @@
       <h1>{{ chosenMural.name}}</h1>
       <h3>{{ chosenMural.artist}}</h3>
     </div>
-    <img :src="chosenMural.image">
+    <img :src="chosenMural.image" alt="Mural example.">
     <p>{{chosenMural.description}}</p>
     <p><strong>Location: </strong> <a :href="`https://www.google.com/maps/search/?api=1&query=${chosenMural.location.longitude},${chosenMural.location.latitude}`" target="_blank">{{chosenMural.location.area}}</a></p>
     <button @click="addToFavourites()" v-if="!this.favourites.includes(this.chosenMural)">Add to favourites</button>
@@ -36,7 +36,7 @@ h1 {
 h3 {
   padding: 0  1vw;
   margin: 0.2vw 0;
-  color: dimgrey;
+  color: #3E3D3D;
   font-size: 1.5em;
 }
 
@@ -56,12 +56,15 @@ img {
 
 button {
   height: 4vh;
+  width: 10vw;
   color: white;
-  background: cadetblue;
+  background: darkcyan;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 a:link, a:visited, a:active {
-  color: cadetblue;
+  color: darkcyan;
   text-decoration: none;
 }
 
