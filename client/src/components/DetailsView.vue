@@ -35,7 +35,7 @@ export default {
   },
 
     setRating: function(_id) {
-
+      rating = chosenMural.rating;
     }
   }
 }
