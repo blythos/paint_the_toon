@@ -514,12 +514,3 @@ db.favourites.insertMany([
       image: "http://uncageddesign.co.uk/project-images/maryhill-community.jpeg"
     }
   ])
-
-db.user.insertMany([
-  {
-    name: "test1"
-  },
-  {
-    name: "test2"
-  }
-])
