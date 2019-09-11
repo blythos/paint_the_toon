@@ -1,7 +1,7 @@
 <template lang="html">
 <div id="rightPane">
   <div class="tabs">
-    <input type="radio" name="tabs" id="tabone" checked="checked" @click="tab = 'details'">
+    <input v-if="chosenMural || tab === 'details'" type="radio" name="tabs" id="tabone" checked="checked" @click="tab = 'details'">
     <label for="tabone">Details</label>
     <div class="tab">
       <details-view  :favourites="favourites" v-if="chosenMural && tab === 'details'" :chosenMural="chosenMural" />
