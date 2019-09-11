@@ -175,11 +175,11 @@ db.trail.insertMany([
         latitude: -4.251472,
         area: "City Centre"
       },
-      artist: "smug",
+      artist: "SmugOne",
       image: "http://uncageddesign.co.uk/project-images/argylecafe.jpg"
     },
     {
-      name: "The World'd Most Economical Taxi",
+      name: "The World's Most Economical Taxi",
       description: "You'll find this fantastical floating taxi on Mitchell Street adjacent to Glasgow's Buchanan Street, capturing the attention of all who walk past.",
       location: {
         longitude: 55.857513,
@@ -256,14 +256,14 @@ db.trail.insertMany([
       image: "http://uncageddesign.co.uk/project-images/puppets.jpg"
     },
     {
-      name: "Strathclyde University Wonderwall",
+      name: "Strathclyde Wonderwall",
       description: "Covering more than 1,000 square metres and several stories, Strathclyde University's Wonderwall was commissioned to celebrate the 50th anniversary of the Royal Charter which conferred the University's status and also the 2014 Commonwealth Games.",
       location: {
         longitude: 55.861200,
         latitude: -4.242625,
         area: "City Centre"
       },
-      artist: "Rogue-one and Ejek",
+      artist: "Rogue-one & EJEK",
       image: "http://uncageddesign.co.uk/project-images/lecture.jpg"
     },
     {
@@ -281,10 +281,11 @@ db.trail.insertMany([
       name: "Barras Mural",
       description: "The mural on the extreme left is 'Bees' by Ejek. King of the Barras in the centre is by Conzo and Globel, otherwise known as Conzo Throb and Ciaran Globel. It features the late 'Teddy Tunnocks' aka King of the Barras. A Weightlifter, bareknuckle champion and heir to the Tunnocks Teacake dynasty. An interesting but not so well known 1930s Glasgow legend. 'Two Faces' is by Mark Worst. The snake is by ASONE.",
       location: {
-        longitude: 55.855079,
-        latitude: -4.238415,
+        longitude: 55.855468,
+        latitude: -4.238005,
         area: "East End"
       },
+      artist: "Various",
       image: "http://uncageddesign.co.uk/project-images/kingbarras.jpg"
     },
     {
@@ -489,11 +490,27 @@ db.artists.insertMany([
   }
 ]);
 
-db.user.insertMany([
-  {
-    name: "test1"
-  },
-  {
-    name: "test2"
-  }
-])
+db.favourites.insertMany([
+    {
+      name: "Bobby and the Bumble",
+      description: "A black Scotty dog looking at a bumble bee.",
+      location: {
+        longitude: 55.894693,
+        latitude: -4.297550,
+        area: "Maryhill Road"
+      },
+      artist: "Rogue-One",
+      image: "http://uncageddesign.co.uk/project-images/bobbybumble.jpg"
+    },
+    {
+      name: "Maryhill Community Mural",
+      description: "Created with the help of pupils from the East Park School, this mural is colourful and distinctive. It can be found at 1148 Maryhill Road.",
+      location: {
+        longitude: 55.886394,
+        latitude: -4.283713,
+        area: "Maryhill"
+      },
+      artist: "Elph",
+      image: "http://uncageddesign.co.uk/project-images/maryhill-community.jpeg"
+    }
+  ])

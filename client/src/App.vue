@@ -14,6 +14,7 @@
   import HeaderSection from '@/components/HeaderSection.vue'
   import VueMap from '@/components/Map.vue'
   import RightPane from  '@/components/RightPane.vue'
+  import Service from '@/services/Service.js'
   export default {
 
     name: 'app',
@@ -30,8 +31,13 @@
 
       })
       eventBus.$on('mural-favourited', (mural) => {
-    this.favourites.push(mural);
+       Service.addFavourite(this.chosenMural);
+       this.favourites.push(mural);
+
   })
+     Service.getFavourites()
+    .then(res => this.favourites = res)
+
     },
     components: {
       VueMap,

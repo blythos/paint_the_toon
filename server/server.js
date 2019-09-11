@@ -22,6 +22,10 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
   const userRouter = createRouter(userCollection)
   app.use('/api/user', userRouter);
 
+  const favCollection = db.collection('favourites');
+  const favRouter = createRouter(favCollection);
+  app.use('/api/favourites', favRouter);
+  
   app.listen(3000, function(){
     console.log(`app listening on port ${this.address().port}`);
   })

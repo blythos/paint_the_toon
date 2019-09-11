@@ -1,7 +1,7 @@
 <template lang="html">
 <div id="rightPane">
   <div class="tabs">
-    <input type="radio" name="tabs" id="tabone" checked="checked" @click="tab = 'details'">
+    <input v-if="chosenMural || tab === 'details'" type="radio" name="tabs" id="tabone" checked="checked" @click="tab = 'details'">
     <label for="tabone">Details</label>
     <div class="tab">
       <details-view  :favourites="favourites" v-if="chosenMural && tab === 'details'" :chosenMural="chosenMural" />
@@ -13,11 +13,7 @@
       <favourites-view :favourites="favourites" v-if="tab === 'favourites'" />
     </div>
 
-    <input type="radio" name="tabs" id="tabthree" @click="tab = 'recommendations'">
-    <label for="tabthree">Nearby</label>
-    <div class="tab">
-      <recommendations-view :recommendations="recommendations" v-if="tab === 'recommendations'"/>
-    </div>
+
   </div>
 </div>
 </template>
@@ -26,7 +22,6 @@
 import {eventBus} from '@/main.js'
 import DetailsView from '@/components/DetailsView';
 import FavouritesView from '@/components/FavouritesView';
-import RecommendationsView from '@/components/RecommendationsView';
 export default {
   name: 'right-pane',
   mounted() {
@@ -42,8 +37,7 @@ export default {
   },
   components: {
     DetailsView,
-    FavouritesView,
-    RecommendationsView
+    FavouritesView
   },
   props: ['chosenMural', 'favourites', 'recommendations']
 }
@@ -71,7 +65,7 @@ export default {
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background:  slategrey;
+  background:  darkcyan;
   color: snow;
   font-weight: bold;
   font-size: 1em;
@@ -84,7 +78,7 @@ export default {
   width: 100%;
   display: none;
   padding: 1rem;
-  background: #FBFBFB;
+  background: #f0f0f0;
 }
 
 .tabs input[type="radio"] {
@@ -92,7 +86,7 @@ export default {
 }
 
 .tabs input[type="radio"]:checked + label {
-  background: #FBFBFB;
+  background: #f0f0f0;
   color: black;
 }
 
