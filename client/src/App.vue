@@ -1,5 +1,5 @@
 <template lang="html">
-  <div>
+  <div id="app">
     <header-section />
     <div id="main">
       <VueMap />
@@ -43,6 +43,10 @@
   </script>
 
   <style lang="css" scoped>
+    #app {
+      font-family: "lato", sans-serif;
+    }
+
     #main {
       display: flex;
       justify-content: space-between;

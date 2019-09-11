@@ -406,7 +406,7 @@ db.trail.insertMany([
         area: "City Centre"
       },
       artist: "Little Book Transfers",
-      image: "http://uncageddesign.co.uk/project-images/charingbirds.jpeg"
+      image: "http://uncageddesign.co.uk/project-images/charingbirds.jpg"
     },
     {
       name: "Gorbel's Snake",
