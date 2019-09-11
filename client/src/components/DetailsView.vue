@@ -21,13 +21,15 @@ export default {
   props: ['chosenMural', 'favourites'],
   methods: {
     addToFavourites: function() {
+
+        eventBus.$emit('mural-favourited', this.chosenMural);
       // let thisMural = this.chosenMural
       // console.log(thisMural);
       // thisMural = {
       //   favourite: true
       // };
       // Service.editTrail(this.chosenMural._id, this.chosenMural);
-    
+
 
   }
 }

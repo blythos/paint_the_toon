@@ -32,6 +32,7 @@
       })
       eventBus.$on('mural-favourited', (mural) => {
        Service.addFavourite(this.chosenMural);
+       this.favourites.push(mural);
 
   })
      Service.getFavourites()
